@@ -42,11 +42,6 @@ const schema = yup
   })
   .required();
 
-const variants = {
-  visible: { opacity: 1 },
-  hidden: { opacity: 0 },
-};
-
 export function LoginForm({ goRegister }: LoginProps) {
   const [isLoading, setIsLoading] = useState(false);
   const { signIn } = useAuth();
@@ -54,7 +49,6 @@ export function LoginForm({ goRegister }: LoginProps) {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm<IFormProps>({
     resolver: yupResolver(schema),

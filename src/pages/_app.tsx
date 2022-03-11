@@ -9,8 +9,8 @@ import "../../styles/global.css";
 
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
-import theme from "../themes/DefaultTheme";
 import { AuthProvider } from "@/contexts/AuthContext";
+import theme from "../themes/DefaultTheme";
 
 const queryClient = new QueryClient({
   defaultOptions: {

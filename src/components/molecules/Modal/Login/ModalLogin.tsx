@@ -58,7 +58,6 @@ export function ModalLogin(): JSX.Element {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm<IFormProps>({
     resolver: yupResolver(schema),

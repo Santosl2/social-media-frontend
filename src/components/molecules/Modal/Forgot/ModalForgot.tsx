@@ -49,8 +49,8 @@ export function ModalForgot(): JSX.Element {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data: IFormProps) => {
-    alert("Opa...");
+  const onSubmit = async () => {
+    // alert("Opa...");
   };
 
   return (
