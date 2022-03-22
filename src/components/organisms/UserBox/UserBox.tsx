@@ -34,18 +34,18 @@ export function UserBox(): JSX.Element {
           <Heading fontSize="2xl" fontWeight={500} fontFamily="body">
             Matheus Filype
           </Heading>
-          <Text color="gray.500">Fullstack Developer</Text>
+          <Text color="gray.500">FrontEnd Developer</Text>
         </Stack>
 
         <Stack direction="row" justify="center" spacing={6}>
           <Stack spacing={0} align="center">
-            <Text fontWeight={600}>36</Text>
+            <Text fontWeight={600}>40</Text>
             <Text fontSize="sm" color="gray.500">
               Seguidores
             </Text>
           </Stack>
           <Stack spacing={0} align="center">
-            <Text fontWeight={600}>27</Text>
+            <Text fontWeight={600}>30</Text>
             <Text fontSize="sm" color="gray.500">
               Seguindo
             </Text>
