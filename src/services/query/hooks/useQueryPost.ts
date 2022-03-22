@@ -1,6 +1,6 @@
 import { useMutation, useQuery } from "react-query";
 
-import { createPost, getPosts, loadMorePosts } from "@/services";
+import { createPost, getPosts, likePost, loadMorePosts } from "@/services";
 
 export function useQueryGetPost(page: number) {
   return useQuery(["GetPost", page], () => getPosts(page), {
@@ -10,6 +10,10 @@ export function useQueryGetPost(page: number) {
 
 export function useQueryCreatePost() {
   return useMutation((todo) => createPost(todo));
+}
+
+export function useQueryLikePost() {
+  return useMutation((todo) => likePost(todo));
 }
 
 export function useQueryLoadMorePosts() {

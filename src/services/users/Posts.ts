@@ -31,3 +31,11 @@ export async function createPost(content: void) {
 
   return response.data;
 }
+
+export async function likePost(id: void) {
+  const response = await api.post<FormResponse>("posts/likes", {
+    post_id: id,
+  });
+
+  return response.data;
+}

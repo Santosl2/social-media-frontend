@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { BiLike } from "react-icons/bi";
 
 import { Box, Avatar, Text, Stack, HStack, Divider } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 import { ButtonCustom } from "@/components/atoms";
+import { useQueryLikePost } from "@/services";
 import dayjs from "@/utils/Dayjs/DayjsLocaleFormated";
 
 import { PostBodyProps } from "./PostBodyProps";
@@ -13,7 +15,16 @@ export function PostBody({
   userLiked,
   content,
   publishedDate,
+  id,
 }: PostBodyProps): JSX.Element {
+  const [liked, setIsLiked] = useState(userLiked);
+
+  const mutation = useQueryLikePost();
+
+  function voteOnPost(postId: void | any) {
+    mutation.mutate(postId);
+  }
+
   return (
     <motion.div animate={{ opacity: [0, 1] }}>
       <Box bg="gray.900" p="1rem" marginBlock="2rem">
@@ -43,9 +54,13 @@ export function PostBody({
               width="150px"
               h="30px"
               borderRadius="full"
+              onClick={() => {
+                voteOnPost(id);
+                setIsLiked((prev) => !prev);
+              }}
             >
-              {userLiked && "Curtiu"}
-              {!userLiked && "Curtir"}
+              {liked && "Curtiu"}
+              {!liked && "Curtir"}
             </ButtonCustom>
           </Stack>
         </HStack>
