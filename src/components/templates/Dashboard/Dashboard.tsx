@@ -91,7 +91,7 @@ export function Dashboard(): JSX.Element {
                     author={post.author}
                     publishedDate={new Date(post.created_at).getTime()}
                     id={post.id}
-                    userLiked={false}
+                    userLiked={post.voted == 0}
                   />
                 );
               })}
