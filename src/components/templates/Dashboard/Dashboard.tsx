@@ -87,6 +87,7 @@ export function Dashboard(): JSX.Element {
               data?.posts?.map((post) => {
                 return (
                   <PostBody
+                    key={post.id}
                     content={post.content}
                     author={post.author}
                     publishedDate={new Date(post.created_at).getTime()}
