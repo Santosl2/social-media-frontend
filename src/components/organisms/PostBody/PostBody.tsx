@@ -53,7 +53,8 @@ export function PostBody({
               leftIcon={<BiLike size={18} />}
               width="150px"
               h="30px"
-              borderRadius="full"
+              borderRadius="md"
+              fontWeight={liked ? "bold" : "300"}
               onClick={() => {
                 voteOnPost(id);
                 setIsLiked((prev) => !prev);
