@@ -66,6 +66,6 @@ npm i && npm run dev
 
 ## 📝 License
 
-This project is under license. See the file [LICENSE](LICENSE.md) for more details.
+This project is under license. See the file [LICENSE](LICENSE) for more details.
 
 Thanks!
