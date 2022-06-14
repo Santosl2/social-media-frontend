@@ -9,6 +9,7 @@ A small social network to practice database relationships.
 
 - [Installation](#installation)
 - [Technologies used in this project](#technologies-used-in-this-project)
+- [Backend](#backend)
 - [Collaborators](#collaborators)
 
 ## Technologies used in this project
@@ -28,7 +29,7 @@ A small social network to practice database relationships.
     - react-query
     - framer motion
 
-# Installation
+## Installation
 
 1- Clone this repo
 
@@ -45,7 +46,7 @@ npm i && npm run dev
 ```
 
 
-## Backend do Projeto
+## Backend
 [Backend Social Media](https://github.com/Santosl2/social-media-backend) 
 
 ## Collaborators
