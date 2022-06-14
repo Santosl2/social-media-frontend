@@ -1,4 +1,17 @@
-# O que foi usado neste projeto:
+# Social Media
+
+A small social network to practice database relationships.
+
+
+![https://imgur.com/fAhGS8o.png](https://imgur.com/fAhGS8o.png)
+
+<br/>
+
+- [Installation](#installation)
+- [Technologies used in this project](#technologies-used-in-this-project)
+- [Collaborators](#collaborators)
+
+## Technologies used in this project
 
     - Typescript
     - React JS
@@ -6,7 +19,7 @@
     - Chakra UI
     - Node JS
     - Typeorm
-    - Testes automatizados com Jest
+    - Jest
     - Postgres
     - Express
     - Axios
@@ -15,12 +28,43 @@
     - react-query
     - framer motion
 
-# Como usar
+# Installation
 
-Acesse a pasta e rode o comando `yarn install`
+1- Clone this repo
 
-Agora no arquivo .env coloque o link da sua API
+2- Run the command
 
-Após a instalação das dependências, vá até a pasta raiz e rode os seguintes comandos:
+```bash
+yarn && yarn dev
+```
 
-- `yarn dev`
+or
+
+```bash
+npm i && npm run dev
+```
+
+
+## Backend do Projeto
+[Backend Social Media](https://github.com/Santosl2/social-media-backend) 
+
+## Collaborators
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/67132916?v=4" width="140px;" alt="Picture of Matheus Filype in GitHub"/><br>
+        <sub>
+          <b>Matheus Filype</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 📝 License
+
+This project is under license. See the file [LICENSE](LICENSE.md) for more details.
+
+Thanks!
